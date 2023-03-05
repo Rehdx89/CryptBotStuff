@@ -19,7 +19,7 @@ public class idk extends GhidraScript {
 		int offset = 0x402038;
 		int offset2 = 0x40211c;
 		byte bytesToDecrypt[] = getBytes(toAddr(offset), sz);
-		byte key[] = getBytes(toAddr(offset2), 0x1f);
+		byte key[] = getBytes(toAddr(offset2), 0xe0);
 
 		for(int i = 0; i < sz; i++)
 		{
